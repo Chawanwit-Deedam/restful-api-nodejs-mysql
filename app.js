@@ -10,6 +10,10 @@ app.use(AppConfig)
 app.use(AppMiddleware)
 app.use(AppRouter)
 
+// app.get('/test', (req, res) => {
+//     console.log("hello world")
+// })
+
 const PORT = process.env.PORT || 3030
 app.listen(PORT, () => {
     console.log( `SERVER IS RUNNING ON PORT ${PORT}` )
